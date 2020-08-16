@@ -30,6 +30,35 @@ h1 {letter-spacing: 6px}
   </div>
 </header>
   
+  
+  
+<!-- Form -->
+  <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" required /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" required /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="book a shoot">Book a Shoot</option>
+      <option value="question">Ask a Question</option>
+    </select></label>
+  </p>
+  <p>
+  <label for="birthday">Date:</label>
+<input type="date" id="date" name="date">
+</p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <div data-netlify-recaptcha="true"></div>
+    <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
 <!-- Photo Grid -->
 <div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
   <div class="w3-half">
