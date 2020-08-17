@@ -13,6 +13,9 @@ h1 {letter-spacing: 6px}
 </style>
 <body>
 
+<!--Button to scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 <!-- !PAGE CONTENT! -->
 <div class="w3-content" style="max-width:1500px">
 
@@ -25,8 +28,8 @@ h1 {letter-spacing: 6px}
   <div class="w3-padding-32">
     <div class="w3-bar w3-border">
       <a href="home.html" class="w3-bar-item w3-button">Home</a>
-      <a href="portfolio.html" class="w3-bar-item w3-button w3-light-grey">Portfolio</a>
-      <a href="#" class="w3-bar-item w3-button">Contact</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey">Contact</a>
     </div>
   </div>
 
@@ -106,6 +109,28 @@ h1 {letter-spacing: 6px}
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.hcwoodworking.com/web/home.php" target="_blank" class="w3-hover-text-green">Gascon Web Design</a></p>
 </footer>
+<script>
+
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 
 </body>
 </html>
