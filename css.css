@@ -1,10 +1,4 @@
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
-html {
-  scroll-behavior: smooth;
-}
-Try it Yourself »
-
-
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
@@ -247,7 +241,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: DarkGary; /* Set a background color */
+  background-color: red; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
